@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Scorekort App</string>
+    <string name="action_settings">Indstillinger</string>
+    <string name="text_view_welcome">Velkommen til</string>
+    <string name="button_add_player">Tilføj spiller</string>
+    <string name="player_overview_text_view">Spillere</string>
+    <string name="coursehandicap_text_view">Banepar</string>
+    <string name="handicap_text_view">Handicap</string>
+    <string name="player_text_view">Spiller</string>
+    <string name="title_activity_scorecard_overview">Scorekort Overblik</string>
+
+    <string name="button_start_round">Start</string>
+    <string name="title_activity_hole_one">HoleOne</string>
+    <string name="front_nine_text_view">For 9</string>
+    <string name="round_total_text_view">Rundetotal:</string>
+    <string name="title_hole_text_view">Hul</string>
+    <string name="title_length_text_view">Længde</string>
+    <string name="title_par_text_view">Par</string>
+    <string name="title_hcp_text_view">Hcp</string>
+    <string name="title_strokes_text_view">Slag</string>
+    <string name="title_score_text_view">Score</string>
+    <string name="back_nine_text_view">Bag 9</string>
+    <string name="add_player_toast">Venligst tilføj en spiller</string>
+    <string name="player_added_toast">Spiller tilføjet</string>
+    <string name="button_overview_main_menu">Score\nkort</string>
+    <string name="button_go_to_next_hole"><![CDATA[>]]></string>
+    <string name="previous_hole_hole_overview_text"><![CDATA[<]]></string>
+    <string name="title_activity_hole_overview">Huloversigt</string>
+    <string name="title_activity_pick_acourse">Vælg bane</string>
+
+    <string name="feature_not_implemented">Banen er ikke tilføjet endnu</string>
+
+    <string name="button_confirm_course">Spil bane</string>
+    <string name="course_pics_not_implemented_text">Ikke tilgængelig for denne bane endnu</string>
+    <string name="name_player_edit_text">Navn</string>
+    <string name="handicap_player_edit_text">Handicap</string>
+    <string name="quit_round">Du er ved at afslutte runden. Gem den? Vælg Fortryd for at fortsætte runden</string>
+    <string name="edit_info_text">Rediger dine oplysninger</string>
+    <string name="player_info_missing">Indtast manglende oplysninger</string>
+    <string name="title_activity_map_of_holes">Kort over hul</string>
+    <string name="meters_text_string">m</string>
+    <string name="tee_to_position_meters_text">m</string>
+    <string name="tee_to_position_meters_text_reset"></string>
+    <string name="button_reset_text_string">Nulstil</string>
+    <string name="left_to_pin_text">Sted på banen</string>
+    <string name="button_forward_map_text"><![CDATA[>]]></string>
+    <string name="button_back_map_text"><![CDATA[<]]></string>
+    <string name="hole_map_view_text">Hul</string>
+    <string name="button_save_round">Gem runde</string>
+    <string name="history_actionbar_title">Historik</string>
+    <string name="title_activity_history">Historik</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="date_history_text">"\nDato: "</string>
+    <string name="course_history_text">"\nBane: "</string>
+    <string name="score_history_text">"\nScore: "</string>
+    <string name="over_under_par_history_text">"\nOver/Under: "</string>
+    <string name="points_history_text">"\nPoint: "</string>
+    <string name="title_extended_activity_history">Udvidet Historik</string>
+    <string name="extended_history_actionbar_title">Udvidet Historik</string>
+    <string name="dialog_yes_text">Ja</string>
+    <string name="dialog_no_text">Nej</string>
+    <string name="delete_history_dialog_text">Slet runde?</string>
+    <string name="dialog_cancel_text">Fortryd</string>
+    <string name="round_saved_info_text">Din runde er nu gemt</string>
+    <string name="how_to_delete_round_info_text">Tryk og hold for at slette runden</string>
+    <string name="points_total_content_history">Point</string>
+    <string name="score_relative_total_content_history">+/-</string>
+    <string name="empty_cell_dash">-</string>
+</resources>

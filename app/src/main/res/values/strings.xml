@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Scorecard App</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_view_welcome">Welcome to</string>
+    <string name="button_add_player">Add player</string>
+    <string name="player_overview_text_view">Players</string>
+    <string name="coursehandicap_text_view">Course par</string>
+    <string name="handicap_text_view">Handicap</string>
+    <string name="player_text_view">Player</string>
+    <string name="title_activity_scorecard_overview">Scorecard Overview</string>
+
+    <string name="button_start_round">Start</string>
+    <string name="title_activity_hole_one">Holes</string>
+    <string name="front_nine_text_view">Out</string>
+    <string name="round_total_text_view">Total:</string>
+    <string name="title_hole_text_view">Hole</string>
+    <string name="title_length_text_view">Length</string>
+    <string name="title_par_text_view">Par</string>
+    <string name="title_hcp_text_view">Hcp</string>
+    <string name="title_strokes_text_view">Strokes</string>
+    <string name="title_score_text_view">Score</string>
+    <string name="back_nine_text_view">In</string>
+    <string name="add_player_toast">Please add player</string>
+    <string name="player_added_toast">Player added</string>
+    <string name="button_overview_main_menu">Overview</string>
+    <string name="button_go_to_next_hole"><![CDATA[>]]></string>
+    <string name="previous_hole_hole_overview_text"><![CDATA[<]]></string>
+    <string name="title_activity_hole_overview">Hole Overview</string>
+    <string name="title_activity_pick_acourse">Choose course</string>
+
+    <string name="feature_not_implemented">Feature not implemented currently</string>
+
+    <string name="button_confirm_course">Play course</string>
+    <string name="course_pics_not_implemented_text">Feature not available for course yet</string>
+    <string name="name_player_edit_text">Name</string>
+    <string name="handicap_player_edit_text">Handicap</string>
+    <string name="quit_round">You are about to quit the round. Save it? Choose cancel to continue round</string>
+    <string name="edit_info_text">Edit information</string>
+    <string name="player_info_missing">Please type in missing info</string>
+    <string name="title_activity_map_of_holes">Map of hole</string>
+    <string name="meters_text_string">m</string>
+    <string name="tee_to_position_meters_text">m</string>
+    <string name="tee_to_position_meters_text_reset"></string>
+    <string name="button_reset_text_string">Reset</string>
+    <string name="left_to_pin_text">Place on course</string>
+    <string name="button_forward_map_text"><![CDATA[>]]></string>
+    <string name="button_back_map_text"><![CDATA[<]]></string>
+    <string name="hole_map_view_text">Hole</string>
+    <string name="button_save_round">Save Round</string>
+    <string name="history_actionbar_title">History</string>
+    <string name="extended_history_actionbar_title">Extended History</string>
+
+    <string name="date_history_text">"\nDate: "</string>
+    <string name="course_history_text">"\nCourse: "</string>
+    <string name="score_history_text">"\nScore: "</string>
+    <string name="over_under_par_history_text">"\nOver/Under: "</string>
+    <string name="points_history_text">"\nPoints: "</string>
+    <string name="title_extended_activity_history">Extended History</string>
+    <string name="dialog_yes_text">Yes</string>
+    <string name="dialog_no_text">No</string>
+    <string name="delete_history_dialog_text">Delete round?</string>
+    <string name="dialog_cancel_text">Cancel</string>
+    <string name="round_saved_info_text">Your round has been saved</string>
+    <string name="how_to_delete_round_info_text">Press and hold to delete round</string>
+    <string name="points_total_content_history">Points</string>
+    <string name="score_total_content_history">Total</string>
+    <string name="score_relative_total_content_history">+/-</string>
+    <string name="empty_cell_dash">-</string>
+</resources>

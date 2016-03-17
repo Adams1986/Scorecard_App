@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="golf_courses_database"
+        translatable="false">
+
+        <item>Golf Club Harekær</item>
+        <item>Brøndby Golfklub</item>
+        <item>Sorø Golfklub</item>
+        <item>Værebro Golfklub</item>
+        <item>REE GOLF</item>
+        <item>Midtsjællands Golfklub</item>
+
+    </string-array>
+
+</resources>

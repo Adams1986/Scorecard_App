@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linear_layout_content_header_totals">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_header_handicap_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:text="@string/handicap_text_view"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_header_total_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:text="@string/score_total_content_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_header_relative_total_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:text="@string/score_relative_total_content_history"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_header_points_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"
+            android:text="@string/points_total_content_history"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear_layout_content_number_totals"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@id/linear_layout_content_header_totals">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_history_handicap_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_history_total_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_history_relative_total_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/extended_content_history_points_text_view"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:background="@drawable/border"/>
+
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linear_layout_content_number_totals"
+        android:id="@+id/content_history_table_front_nine_layout"
+        android:stretchColumns="*"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/hole_out_header_content_text_view"
+                android:text="@string/title_hole_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/hole_1_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_2_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_3_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_4_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_5_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_6_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_7_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_8_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_9_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_out_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:text="@string/front_nine_text_view"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/si_out_header_content_text_view"
+                android:text="@string/title_hcp_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_1_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_2_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_3_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_4_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_5_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_6_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_7_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_8_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_9_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/score_out_header_content_text_view"
+                android:text="@string/title_score_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/hole_1_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_2_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_3_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_4_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_5_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_6_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_7_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_8_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_9_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_out_total_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_history_table_front_nine_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/hole_in_header_content_text_view"
+                android:text="@string/title_hole_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/hole_10_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_11_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_12_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_13_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_14_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_15_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_16_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_17_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_18_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_in_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:text="@string/back_nine_text_view"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/si_in_header_content_text_view"
+                android:text="@string/title_hcp_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_10_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_11_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_12_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_13_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_14_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_15_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_16_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_17_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/stroke_index_hole_18_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:padding="2dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/score_in_header_content_text_view"
+                android:text="@string/title_score_text_view"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"
+                android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/hole_10_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_11_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_12_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_13_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_14_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_15_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_16_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_17_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_18_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+            <TextView
+                android:id="@+id/hole_in_total_score_content_text_view"
+                android:padding="2dp"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@drawable/border"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/link_text_material_light"
+        android:id="@+id/hole_overview_layout"
+        >
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="462dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="499dp"
+                android:id="@+id/imageView"
+                android:layout_gravity="center"
+                android:src="@drawable/hul1"
+                android:paddingTop="10dp"
+                android:onClick="showMapOfHole"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/previous_hole_hole_overview_text"
+                android:id="@+id/button_go_to_previous_hole"
+                android:onClick="showOverview"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                style="?android:attr/buttonStyleSmall"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Score"
+                android:id="@+id/score_one_text_view"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <NumberPicker
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/hole_one_score_input"
+                android:layout_weight="1"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                />
+
+            <Button
+                android:textSize="30sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/button_go_to_next_hole"
+                android:id="@+id/button_go_to_next_hole"
+                android:layout_gravity="center_vertical"
+                android:onClick="showNextHole"
+                android:layout_weight="1"
+                style="?android:attr/buttonStyleSmall"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
